@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var diceImageView2: UIImageView!
     
+    @IBOutlet weak var rollButton: UIButton!
+    
     var diceArray = [#imageLiteral(resourceName: "dice1"),#imageLiteral(resourceName: "dice2"),#imageLiteral(resourceName: "dice3"),#imageLiteral(resourceName: "dice4"),#imageLiteral(resourceName: "dice5"),#imageLiteral(resourceName: "dice6")]
     
     //var keyword is for something that changes in the code otherwise use let or const
@@ -24,6 +26,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
    
         diceImageView2.image = #imageLiteral(resourceName: "dice6");
+        
+        //rollButton.sendActions(for: .touchUpInside)
         
     }
 
